@@ -6,8 +6,8 @@ if [ -f ulfm-install/lib/libmpi.so ]; then
 else
   ROOT=`pwd`
   echo "Downloading ULFM from repo"
-  wget https://bitbucket.org/icldistcomp/ulfm2/get/ulfm2.0rc.tar.bz2
-  tar -xjf ulfm2.0rc.tar.bz2
+  wget -O ulfm.tar.gz https://bitbucket.org/icldistcomp/ulfm2/get/v4.0.1ulfm2.1rc1.tar.gz
+  tar -xf ulfm.tar.gz
   mv icldist* ulfm-src/
   echo " - Configuring and building ULFM."
   cd ulfm-src
